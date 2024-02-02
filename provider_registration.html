@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+
+<body>
+
+    <br>
+
+    <!-- Form for customer registration -->
+    <div class="registration-form">
+        <h2>Service Provider</h2>
+        <form action="process_customer_registration.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact"  title="Please enter only numerical values" required>
+
+<!-- 
+            <label for="name">Category</label>
+            <input type="text" id="name" name="name" required> -->
+
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+
+                <option value="" disabled selected>Select a category</option>
+                <option value="painter">Painter</option>
+                <option value="beautician">Beautician</option>
+                <option value="electrician">Electrician</option>
+                <option value="plumber">Plumber</option>
+            </select>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

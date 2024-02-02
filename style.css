@@ -1,0 +1,42 @@
+/* Style for the fire effect buttons */
+.fire-button {
+    color: #a73484;
+    border: 2px solid #c77dbb;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    width: 100%;
+    margin: 10px 0; /* Add margin to separate buttons vertically */
+  }
+  
+  /* Fire effect on button hover */
+  .fire-button:hover {
+    background-color: #3d85a1;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button active effect (when clicked) */
+  .fire-button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+  
+  /* Style for the blurred container */
+  .blurred-container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 950px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2px;
+    text-align: center;
+    display: flex; /* Display children in a column */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
